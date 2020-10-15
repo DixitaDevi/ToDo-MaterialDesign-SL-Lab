@@ -1,0 +1,28 @@
+<br><br>
+<div class="container2">
+    <h1><u>Todo Details</u></h1>
+
+    <div *ngIf="todo" class="row" >
+    
+        <h2>{{todo.title}}</h2>
+        <div>
+            <span>ID: </span>
+            {{todo.id}}
+        </div>
+        <div style="padding: 1%;">
+            <label class="label">Date:
+                <input [(ngModel)]="todo.date" placeholder="Date"/>
+            </label>
+
+            <label class="label">Title:
+                <input [(ngModel)]="todo.title" placeholder="title"/>
+            </label>
+
+            <label class="label">Description:
+                <input [(ngModel)]="todo.description" placeholder="description"/>
+            </label>
+
+        </div>
+    
+    </div>
+</div>
